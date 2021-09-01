@@ -7,6 +7,6 @@ import org.springframework.stereotype.Repository;
 
 //ambil dari account idnya tipenya adalah long
 @Repository
-public interface AcountRepo extends JpaRepository <Account, Long> {
-    
+public interface AccountRepo extends JpaRepository <Account, Long> {
+    Account getFirstByEmail(String email);
 }
